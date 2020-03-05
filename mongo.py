@@ -10,9 +10,9 @@ api = Api(app)
 
 app.config['MONGO_DBNAME'] = 'employee'
 
-app.config['MONGO_URI'] = 'mongodb+srv://row:row@ilpcrud-nlvsy.mongodb.net/test?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = ''
 
-client = MongoClient("mongodb+srv://row:row@ilpcrud-nlvsy.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient("")
 
 db = client.get_database('employee')
 
